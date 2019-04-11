@@ -63,7 +63,9 @@ sumEcon
 ### 1.3
 善用logical class遇到數學計算會形成1與0的數值之特質，計算經濟系學生在該科的平均成績（即經濟系學生在該科成績加總除以經濟系學生數），存成答案物件meanEcon。
 ```{r ans13}
-
+fromEcon*grade
+meanEcon <- sum(fromEcon*grade)/sumEcon
+meanEcon
 ```
  
 ## 2
@@ -88,7 +90,7 @@ head(submitTime)
 請將submitTime轉成台灣時區，並存在答案物件twTime。
 ```{r ans22}
 twTime <- with_tz(submitTime, tz="Asia/Taipei")
-twTime
+head(twTime)
 ```
 
 ### 2.3
@@ -96,7 +98,6 @@ twTime
 
 ```{r ans23}
 hour(twTime)
-c(1:6)
 nightOwl <- hour(twTime) %in% c(1:6)
 nightOwl
 ```
