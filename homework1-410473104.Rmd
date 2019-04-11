@@ -87,7 +87,8 @@ head(submitTime)
 ### 2.2
 請將submitTime轉成台灣時區，並存在答案物件twTime。
 ```{r ans22}
-
+twTime <- with_tz(submitTime, tz="Asia/Taipei")
+twTime
 ```
 
 ### 2.3
