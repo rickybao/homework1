@@ -95,6 +95,9 @@ twTime
 使用`hour(twTime)`取出twTime的小時值。創造出一個logical class答案物件nightOwl，為TRUE若twTime中的投票時間在半夜1點到早上6點間（包含1與6。
 
 ```{r ans23}
+hour(twTime)
+nightOwl <- c(1:6)
+hour(twTime) %in% nightOwl
 ```
 
 ### 2.4
